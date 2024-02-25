@@ -4,9 +4,71 @@
   переключая тему
 */
 
-.page.theme_dark {
+.page .theme_dark {
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  --main-background-color: rgb(0, 0, 40);
+  --accent-color: rgb(255, 0, 112);
+  --main-title-color: rgb(219, 0, 255);
+  --theme-switch-color: rgb(255, 0, 112);
+  --section-title-text-color: rgb(0, 0, 40);
+  --section-content-text-color: rgb(241, 178, 206);
+}
+
+.theme_dark {
+  background-image: url(../images/cover-image-dark.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.theme_dark .decoration-element::after {
+  content: "REC";
+  font-family: IBM Plex Mono, serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: rgb(255, 0, 112);
+  position: absolute;
+  inset-inline-end: 38px;
+  inset-block-start: 10px;
+  z-index: 2;
+}
+
+.theme_dark .decoration-element::before {
+  content: "";
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: rgb(255, 0, 112);
+  box-shadow: 0px 0px 4px 2px rgb(255, 0, 112);
+  position: absolute;
+  inset-inline-end: 19px;
+  inset-block-start: 18px;
+  z-index: 2;
+}
+
+@media (width >= 768px) {
+  
+  .theme_dark .decoration-element::after {
+    inset-inline-end: 48px;
+    inset-block-start: 20px;
+  }
+
+  .theme_dark .decoration-element::before {
+    inset-inline-end: 29px;
+    inset-block-start: 28px;
+  }
+
+  .theme_auto .decoration-element::after {
+    inset-inline-end: 48px;
+    inset-block-start: 20px;
+  }
+
+  .theme_auto .decoration-element::before {
+    inset-inline-end: 29px;
+    inset-block-start: 28px;
+  }
 }
