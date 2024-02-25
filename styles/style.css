@@ -220,9 +220,6 @@
   align-items: center;
 }
 
-.footer-wrapper {
-}
-
 .footer::before {
   content: "";
   position: absolute;
@@ -367,15 +364,12 @@
 @media (width >= 1024px) {
   .header__theme-menu-list {
     flex-direction: row;
+    padding-inline-start: 20px;
   }
 
   .header__theme-menu {
     justify-self: center;
     align-self: start;
-  }
-
-  .header__theme-menu-list {
-    padding-inline-start: 20px;
   }
 
   .header-title-theme {
