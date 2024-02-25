@@ -3,6 +3,11 @@
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   background-color: var(--main-background-color);
+  background-image: var(--bg-image);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .decoration-element {
@@ -208,14 +213,14 @@
   margin-block-start: 40px;
   position: relative;
   padding: clamp(10px, calc(10 / 375 * 100vw), 20px);
-}
-
-.footer-wrapper {
   min-height: 668px;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.footer-wrapper {
 }
 
 .footer::before {
@@ -330,6 +335,10 @@
     grid-column: 3 / 4;
   }
 
+  .footer {
+    margin-block-start: 60px;
+  }
+
   .footer-title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
@@ -346,12 +355,12 @@
 
   .footer::before {
     inset-inline-end: 20px;
-    inset-block-start: 40px;
+    inset-block-start: 20px;
   }
 
   .footer::after {
     inset-inline-start: 20px;
-    inset-block-end: 40px;
+    inset-block-end: 20px;
   }
 }
 
@@ -363,6 +372,10 @@
   .header__theme-menu {
     justify-self: center;
     align-self: start;
+  }
+
+  .header__theme-menu-list {
+    padding-inline-start: 20px;
   }
 
   .header-title-theme {
@@ -386,6 +399,14 @@
   .main-section-how {
     column-gap: 10px;
   }
+
+  .footer::before {
+    inset-block-start: 28px;
+  }
+
+  .footer::after {
+    inset-block-end: 12px;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -396,11 +417,7 @@
     --theme-switch-color: rgb(255, 0, 112);
     --section-title-text-color: rgb(0, 0, 40);
     --section-content-text-color: rgb(241, 178, 206);
-    background-image: url(../images/cover-image-dark.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
+    --bg-image: url(../images/cover-image-dark.png);
   }
 
   .theme_auto .decoration-element::after {
@@ -437,10 +454,6 @@
     --theme-switch-color: rgb(53, 52, 48);
     --section-title-text-color: rgb(53, 52, 48);
     --section-content-text-color: rgb(53, 52, 48);
-    background-image: url(../images/cover-image-light.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
+    --bg-image: url(../images/cover-image-light.png);
   }
 }

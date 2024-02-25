@@ -15,15 +15,16 @@
   --theme-switch-color: rgb(255, 0, 112);
   --section-title-text-color: rgb(0, 0, 40);
   --section-content-text-color: rgb(241, 178, 206);
+  --bg-image: url(../images/cover-image-dark.png);
 }
 
-.theme_dark {
+/* .theme_dark {
   background-image: url(../images/cover-image-dark.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-}
+} */
 
 .theme_dark .decoration-element::after {
   content: "REC";
@@ -51,7 +52,6 @@
 }
 
 @media (width >= 768px) {
-  
   .theme_dark .decoration-element::after {
     inset-inline-end: 48px;
     inset-block-start: 20px;
