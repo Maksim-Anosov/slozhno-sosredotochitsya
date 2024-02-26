@@ -3,14 +3,11 @@
   и их переопределение под различные устройства
 */
 :root {
-  /* --accent-color: rgb(0, 0, 40);
-  --secondary-color: rgb(255, 0, 112);
-  --content-text-color: rgb(241, 178, 206);
-  --title-text-color: rgb(219, 0, 255); */
   --main-background-color: rgb(0, 0, 40);
   --accent-color: rgb(255, 0, 112);
   --main-title-color: rgb(219, 0, 255);
   --theme-switch-color: rgb(255, 0, 112);
+  --hover-color: rgba(255, 0, 112, 0.4);
   --section-title-text-color: rgb(0, 0, 40);
   --section-content-text-color: rgb(241, 178, 206);
   --bg-image: url(../images/cover-image-dark.png);

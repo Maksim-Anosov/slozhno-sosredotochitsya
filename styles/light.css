@@ -13,15 +13,21 @@
   --accent-color: rgb(255, 141, 203);
   --main-title-color: rgb(255, 194, 230);
   --theme-switch-color: rgb(53, 52, 48);
+  --hover-color: rgba(50, 49, 45, 0.4);
   --section-title-text-color: rgb(53, 52, 48);
   --section-content-text-color: rgb(53, 52, 48);
   --bg-image: url(../images/cover-image-light.png);
 }
 
-/* .theme_light {
-  background-image: url(../images/cover-image-light.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-} */
+@media (prefers-color-scheme: light) {
+  .theme_auto {
+    --main-background-color: rgb(255, 241, 247);
+    --accent-color: rgb(255, 141, 203);
+    --main-title-color: rgb(255, 194, 230);
+    --theme-switch-color: rgb(53, 52, 48);
+    --hover-color: rgba(50, 49, 45, 0.4);
+    --section-title-text-color: rgb(53, 52, 48);
+    --section-content-text-color: rgb(53, 52, 48);
+    --bg-image: url(../images/cover-image-light.png);
+  }
+}
